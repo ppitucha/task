@@ -1,0 +1,9 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+GET     /generate/json/:size                       controllers.JsonGenerator.getPositions(size: Int)
+GET     /csv/endpoint1/:size                       controllers.CSVConverter.endpoint1(size: Int)
+POST    /csv/endpoint2/:size                       controllers.CSVConverter.endpoint2(size: Int)
+POST    /csv/endpoint3/:size                       controllers.CSVConverter.endpoint3(size: Int)
